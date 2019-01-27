@@ -1,0 +1,11 @@
+spring:
+  profiles.active: local
+
+---
+spring:
+  profiles: local
+  datasource: mongo
+    host: localhost
+    port: 27017
+    db: test
+    collection: price

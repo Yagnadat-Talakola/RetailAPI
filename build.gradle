@@ -1,0 +1,22 @@
+
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.2.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-core
+    compile group: 'org.springframework', name: 'spring-core', version: '5.1.4.RELEASE'
+    // https://mvnrepository.com/artifact/io.github.openfeign/feign-core
+    compile group: 'io.github.openfeign', name: 'feign-core', version: '9.1.0'
+    // https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.9.1'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.6.1'
+}
